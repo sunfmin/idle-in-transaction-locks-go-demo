@@ -1,0 +1,10 @@
+version: '2'
+services:
+    postgres:
+        image: postgres:9
+        environment:
+        - "POSTGRES_USER=ec"
+        - "POSTGRES_PASSWORD=123"
+        - "POSTGRES_DB=ec_test"
+        ports:
+        - "5001:5432"
